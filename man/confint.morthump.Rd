@@ -4,8 +4,7 @@
 \alias{confint.morthump}
 \title{Confidence Intervals for morthump fit}
 \usage{
-\method{confint}{morthump}(object, parm = "e0", level = 0.95, method,
-  iter = 1000, ...)
+\method{confint}{morthump}(object, parm = "e0", level = 0.95, method, iter = 1000, ...)
 }
 \arguments{
 \item{object}{the result of a \code{morthump} fit.}

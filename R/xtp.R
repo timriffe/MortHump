@@ -24,7 +24,7 @@
 #' Hyndman, R. J., & Ullah, M. S. (2007). Robust forecasting of mortality and fertility rates: a functional data approach. Computational Statistics & Data Analysis, 51(10), 4942-4956.
 #'
 #' @importFrom demography fdm
-#' @importFrom demography forecast.fdm
+#' @importFrom forecast forecast
 #' @importFrom demography read.demogdata
 #'
 #' @export
@@ -65,7 +65,7 @@ xtp <- function(path, max, country, year, sex, cmx){
   # projection
   s <- ifelse(sex == "males", "male", "female")
   fdm <- fdm(per, series = s)
-  fc <- demography::forecast.fdm(fdm, h = max-30+1)
+  fc <- forecast::forecast(fdm, h = max-30+1)
 
   if(sex == "males"){cmx.fc <- diag(fc$rate$male[(end-year+1):(max+1),])}
   if(sex == "females"){cmx.fc <- diag(fc$rate$female[(end-year+1):(max+1),])}

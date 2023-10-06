@@ -4,9 +4,18 @@
 \alias{LT}
 \title{A function to build lifetables and extract certain lifetable statistics from data.}
 \usage{
-LT(Nx = NULL, Dx = NULL, Mx = Dx/Nx, ages = 0:(length(Mx) - 1),
-  axmethod = "midpoint", sex = "female", mxsmooth = TRUE,
-  axsmooth = TRUE, radix = 1, verbose = TRUE)
+LT(
+  Nx = NULL,
+  Dx = NULL,
+  Mx = Dx/Nx,
+  ages = 0:(length(Mx) - 1),
+  axmethod = "midpoint",
+  sex = "female",
+  mxsmooth = TRUE,
+  axsmooth = TRUE,
+  radix = 1,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{Nx}{numeric vector of population exposures by age.}

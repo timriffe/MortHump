@@ -4,8 +4,18 @@
 \alias{HMD2MH}
 \title{Format data from the Human Mortality Database for use in the MortHump package}
 \usage{
-HMD2MH(country, year, dim = "period", xtra = FALSE, sex, min = 0,
-  max = NULL, username = NULL, password = NULL, path = NULL)
+HMD2MH(
+  country,
+  year,
+  dim = "period",
+  xtra = FALSE,
+  sex,
+  min = 0,
+  max = NULL,
+  username = NULL,
+  password = NULL,
+  path = NULL
+)
 }
 \arguments{
 \item{country}{\href{http://www.mortality.org/cgi-bin/hmd/hmd_download.php}{HMD population letter code}}

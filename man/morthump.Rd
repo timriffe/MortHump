@@ -4,8 +4,18 @@
 \alias{morthump}
 \title{Isolate the young adult mortality hump from a set of age-specific mortality rates}
 \usage{
-morthump(data, model, method = "port", w = 1/data$m, start = NULL,
-  maxit = 500, x1 = 30, x2 = 50, lambda.sen = 100, lambda.hump = 1)
+morthump(
+  data,
+  model,
+  method = "port",
+  w = 1/data$m,
+  start = NULL,
+  maxit = 500,
+  x1 = 30,
+  x2 = 50,
+  lambda.sen = 100,
+  lambda.hump = 1
+)
 }
 \arguments{
 \item{data}{data frame produced with \code{HMD2MH} or similarly structured}

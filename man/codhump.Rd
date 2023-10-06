@@ -4,8 +4,15 @@
 \alias{codhump}
 \title{Decompose the contributions to the young adult mortality hump by cause}
 \usage{
-codhump(data, typ, x.range = NULL, maxit = 200, x.hump = 25,
-  start.correct = FALSE, lambda = 10^5)
+codhump(
+  data,
+  typ,
+  x.range = NULL,
+  maxit = 200,
+  x.hump = 25,
+  start.correct = FALSE,
+  lambda = 10^5
+)
 }
 \arguments{
 \item{data}{list produced with \code{HCD2MH} or similarly structured}

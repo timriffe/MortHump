@@ -1,8 +1,8 @@
 Package: MortHump
 Type: Package
 Title: Measure the Young Adult Mortality Hump
-Version: 0.2
-Date: 2018-01-17
+Version: 0.21
+Date: 2023-10-06
 Author: Adrien Remund, Carlo G Camarda, Tim Riffe
 Maintainer: Adrien Remund <adrien.remund@unige.ch>
 Description: Fit diverse models of mortality graduation, parametric or not, in
@@ -11,12 +11,14 @@ Description: Fit diverse models of mortality graduation, parametric or not, in
     all-cause or cause-specific data. A description of the methods used can be found in     Remund A., Camarda C. and Riffe T. (2018) Analyzing the Young Adult Mortality Hump in     R with MortHump. MPIDR Technical Report TR-2018-3.
 License: GPL-2
 Imports: HMDHFDplus, MortalitySmooth, RColorBrewer, WeightedCluster,
-        demography, minpack.lm, svcm, Matrix
+        minpack.lm, Matrix, forecast
+Depends: demography
 LazyData: TRUE
-RoxygenNote: 6.0.1
+RoxygenNote: 7.2.3
 Suggests: R.rsp
-VignetteBuilder: R.rsp
 NeedsCompilation: no
-Packaged: 2018-01-18 09:07:41 UTC; Remund
 Repository: CRAN
 Date/Publication: 2018-01-24 12:56:41 UTC
+Encoding: UTF-8
+Remotes: 
+  github::robjhyndman/demography

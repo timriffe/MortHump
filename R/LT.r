@@ -52,7 +52,6 @@
 #'
 #' @importFrom MortalitySmooth Mort1Dsmooth
 #' @importFrom stats loess
-#' @importFrom svcm cleversearch
 #'
 #' @export
 #'

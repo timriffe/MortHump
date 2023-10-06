@@ -4,8 +4,16 @@
 \alias{sse.fit}
 \title{Fit a Sum of Smooth Exponentials}
 \usage{
-sse.fit(data, lambda.hump = 1, lambda.sen = 10, x.hump = 35, x.sen = 50,
-  kappa = 10^5, maxit = 200, verbose = FALSE)
+sse.fit(
+  data,
+  lambda.hump = 1,
+  lambda.sen = 10,
+  x.hump = 35,
+  x.sen = 50,
+  kappa = 10^5,
+  maxit = 200,
+  verbose = FALSE
+)
 }
 \arguments{
 \item{data}{data frame produced with \code{HMD2MH} or similarly structured}
