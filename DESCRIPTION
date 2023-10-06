@@ -20,5 +20,3 @@ NeedsCompilation: no
 Repository: CRAN
 Date/Publication: 2018-01-24 12:56:41 UTC
 Encoding: UTF-8
-Remotes: 
-  github::robjhyndman/demography
